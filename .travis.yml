@@ -11,6 +11,6 @@ cache:
 jobs:
   include:
   - jdk: oraclejdk8
-    script: mvn test
+    script: cd iTrust2 && mvn test
 #    after_success:
 #      - mvn clean cobertura:cobertura coveralls:report -P coveralls.io
