@@ -1,0 +1,16 @@
+language: java
+services:
+  - mysql
+ 
+ 
+cache:
+  directories:
+    - "$HOME/.m2"
+    
+    
+jobs:
+  include:
+  - jdk: oraclejdk8
+    script: mvn test
+#    after_success:
+#      - mvn clean cobertura:cobertura coveralls:report -P coveralls.io
